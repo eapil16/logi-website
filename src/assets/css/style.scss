@@ -184,7 +184,7 @@ a {
     &__logo {
       max-width: 150px;
       position: relative;
-      z-index: 55;
+      z-index: 5;
       svg {
         path {
           fill:#272727;
@@ -413,6 +413,12 @@ a {
       }
     }
   }
+}
+
+.fixed-menu__logo {
+  position: absolute;
+  top: 50px;
+  left: 90px;
 }
 
 .company-menu {
@@ -903,6 +909,32 @@ body {
       color:#2D2D2D;
       font-family: 'AvertaCY-Black';
       max-width: 800px;
+    }
+  }
+  .info-block {
+    p {
+      font-size: 14px !important;
+      line-height: 25px !important;
+      color: #2D2D2D;
+      margin: 0 0 30px 0;
+      font-family: 'AvertaCY-Regular'
+    }
+    a.more {
+      font-size: 14px;
+      line-height: 20px;
+      color: #2D2D2D;
+      text-decoration: underline;
+      font-family: 'AvertaCY-Semibold';
+      img {
+        margin: 0 0 -1px 20px;
+        max-width: 13px;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+      &:hover {
+        text-decoration: none;
+        color: #FFA70D;
+      }
     }
   }
 }
@@ -2402,6 +2434,11 @@ body {
       }
     }
   }
+  &__images {
+    .last-image {
+      margin-top: 50px;
+    }
+  }
 }
 .grid {
   margin: 0 -25px;
@@ -2414,6 +2451,12 @@ body {
 @media (min-width: 1050px) {
   .container {
     max-width: 1030px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .fixed-menu__logo {
+    left: 30px;
   }
 }
 
@@ -2434,6 +2477,9 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .page-caption .info-block {
+    margin: 30px 0 0 0;
+  }
   .page-caption p.info {
     margin: 25px 0 0 0 !important;
   }  
@@ -2500,6 +2546,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .solutions-text__images .last-image {
+    margin-top: 30px;
+  }
   .solutions-text h1 {
     font-size: 30px;
     line-height: 40px;
@@ -2805,6 +2854,13 @@ body {
 }
 
 @media screen and (max-width: 575px) {
+  .solutions-text__images .last-image {
+    margin-top: 10px;
+  }
+  .fixed-menu__logo {
+    left: 15px;
+    top: 35px;
+  }
   .grid-item {
     width: calc(50% - 10px);
     margin: 10px 5px 0;
