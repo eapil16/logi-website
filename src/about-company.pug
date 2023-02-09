@@ -1,0 +1,122 @@
+doctype html
+html(lang="ru")
+	include modules/head	
+
+	body
+		#cursor
+		.wrapper 
+			include modules/header
+
+			main.main-section
+				.page-caption.indent-block__full
+					.container 
+						h1.page-caption-flex Золотой партнер Bitrix 
+							img(src="assets/images/bitrix-logo.svg", alt="")
+						p Мы помогаем бизнесу
+				.container
+					.about-company.wow.animate__fadeInUp.animated(data-wow-duration="1s",  animation-timing-function="ease-in")  
+						h2 Сотрудничество
+						.row
+							.col-lg-4.col-12
+								p.caption У нас есть четыре простых правила, которые позволяют формировать хорошие отношения:
+							.col-lg-8.col-12
+								ol.list 
+									li Работа только по договору
+										p Все обязательства сторон закрепляются юридически.
+									li Честное ценообразование
+										p Стоимость каждого проекта рассчитывается в подробной смете на основе трудочасов разработки.
+									li Прозрачный процесс разработки
+										p Заказчик может видеть прогресс выполнения проекта на любом из этапов.
+									li Централизация управления проектом
+										p Каждый из этапов проекта и взаимодействие с заказчиком обеспечивается одним специалистом, что позволяет избежать лишних издержек со стороны заказчика и задержек со стороны исполнителя.
+					.about-company__odds
+						.work-odds.wow.animate__fadeInUp.animated(data-wow-duration="1s",  animation-timing-function="ease-in") 
+							.row 
+								.col-sm-4.col-6
+									.work-odds__item 
+										strong 2013
+										p Работаем с 2013 года
+								.col-sm-4.col-6
+									.work-odds__item 
+										strong Bitrix
+										p Золотой партнер 1С-Битрикс
+								.col-sm-4.col-6
+									.work-odds__item 
+										strong 200+
+										p успешно выполненных проектов
+					.about-company__images.wow.animate__fadeInUp.animated(data-wow-duration="1s",  animation-timing-function="ease-in")  
+						img(src="assets/images/img-1.png", alt="")
+						img(src="assets/images/img-2.png", alt="")
+				
+				.about-company__services.wow.animate__fadeInUp.animated(data-wow-duration="1s",  animation-timing-function="ease-in")
+					.container 
+						.row
+							.col-lg-4.col-12
+								h2 Мы предлагаем:
+							.col-lg-8.col-12
+								.row 
+									.col-sm-6.col-12
+										.about-company__services_item 
+											p.note Dev
+											p.caption Web-Разработка
+											ul.list 
+												li 
+													a(href="#") Интернет-магазины
+												li 
+													a(href="#") Посадочные страницы
+												li 
+													a(href="#") Web-приложения и сервисы
+												li 
+													a(href="#") Прототипирование
+												li 
+													a(href="#") Frontend-разработка
+									.col-sm-6.col-12
+										.about-company__services_item 
+											p.note SEO
+											p.caption Продвижение
+											ul.list 
+												li 
+													a(href="#") Разработка стратегии продвижения
+												li 
+													a(href="#") Вывод нового продукта на рынок
+												li 
+													a(href="#") Расширение географии сбыта
+												li 
+													a(href="#") Копирайтинг
+												li 
+													a(href="#") Search Engine Optimization (SEO)
+									.col-sm-6.col-12
+										.about-company__services_item 
+											p.note Design
+											p.caption Дизайн
+											ul.list 
+												li 
+													a(href="#") Брендинг
+												li 
+													a(href="#") Айдентика
+												li 
+													a(href="#") Графический дизайн
+												li 
+													a(href="#") Web-дизайн
+												li 
+													a(href="#") UI/UX
+									.col-sm-6.col-12
+										.about-company__services_item 
+											p.note App
+											p.caption Мобильные приложения
+											ul.list 
+												li 
+													a(href="#") React / Angular
+												li 
+													a(href="#") iOS apps
+												li 
+													a(href="#") Android apps
+
+				include modules/clients
+
+				.container
+					include modules/reviews
+				include modules/faq	
+
+			include modules/footer
+

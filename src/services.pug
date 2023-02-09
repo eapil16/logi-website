@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+	include modules/head	
+
+	body
+		#cursor
+		.wrapper 
+			include modules/header
+
+			main.main-section
+				.page-caption.indent-block__full
+					.container 
+						p Услуги
+				.container
+					include modules/services-white	
+				include modules/projects
+				include modules/clients
+				.container
+					include modules/reviews
+				include modules/faq
+
+			include modules/footer
+

@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+	include modules/head	
+
+	body
+		#cursor
+		.wrapper 
+			include modules/header
+
+			main.main-section
+				.page-caption.indent-block__full
+					.container 
+						h1 Контакты
+						p Привет! 
+							strong Мы всегда на связи.
+						p.text 
+							span 170100, Тверь, ул. Трехсвятская, д. 35Б, оф. 405
+							span 
+								a.phone(href="tel:8822751185") 8 (4822) 75-11-85
+							span 
+								a.mail(href="mailto:sale@logicloud.ru") sale@logicloud.ru
+				.container 
+					.contacts-form.indent-block__full.wow.animate__fadeInUp.animated(data-wow-duration="1s",  animation-timing-function="ease-in") 
+						form 
+							.form-group 
+								input.form-control(type="text", placeholder="Ваше имя")
+							.form-group 
+								input.form-control(type="text", placeholder="Email адрес для обратной связи")
+							.form-group 
+								input.form-control(type="text", placeholder="Расскажите нам о своем проекте")
+							button.form-button Отправить
+								img(src="assets/images/arrow-yellow.svg" alt="")
+				include modules/faq
+
+			include modules/footer
+

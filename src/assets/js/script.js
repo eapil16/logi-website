@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
             $(this).addClass('menu-toggle-cont_active'); 
             $('.fixed-menu').slideDown(300); 
             $('body').addClass('hidd'); 
-            // $('.header-block__logo').addClass('header-block__logo-white'); 
+            $('.header-block__logo').addClass('header-block__logo-white'); 
         } else { 
             $(this).removeClass('menu-toggle-cont_active'); 
             $('.fixed-menu').slideUp(300);
             $('body').removeClass('hidd');
-            // $('.header-block__logo').removeClass('header-block__logo-white');
+            $('.header-block__logo').removeClass('header-block__logo-white');
         } 
     });
 
