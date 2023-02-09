@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mouseY= e.pageY;
     };
 
-    gsap.to({}, 0.05, {
+    gsap.to({}, 0.0015, {
         repeat: -1,
         
         onRepeat: () => {
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             posY += (mouseY - posY)/5,
             gsap.set(cursor, {
                 css: {
-                    left:mouseX,
-                    top:mouseY,
+                    left:posX - 5,
+                    top:posY -5,
                 }
             })
         }
