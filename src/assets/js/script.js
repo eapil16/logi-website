@@ -137,6 +137,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     $('.grid').masonry({
         itemSelector: '.grid-item',
-      });
+    });
+
+    /* 16 11 */
+    window.addEventListener('scroll', function () {
+		if (document.querySelector('.header')) {
+			if (window.scrollY > 1) {
+				document.querySelector('.header').classList.add('header-sticky');
+			} else {
+				document.querySelector('.header').classList.remove('header-sticky');
+			}
+		}
+	});
+    /* end 16 11 */
 
 });
