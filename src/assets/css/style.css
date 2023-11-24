@@ -3799,3 +3799,515 @@ body {
 
 }
 /* end 16 11 */
+
+
+/* 23 11 */
+.bot-odds {
+  background: #FAF7F4;
+  padding: 120px 0;
+}
+.bot-odds__flex {
+  display: flex;
+  align-items: flex-start;
+}
+.bot-odds__image {
+  min-width: 400px;
+  max-width: 400px;
+  margin: 0 50px 0 0;
+}
+.bot-odds__image img {
+  width: auto;
+  max-width: 100%;
+}
+.bot-odds__content {
+  width: 100%;
+}
+.bot-odds__content p.caption {
+  font-size: 36px;
+  line-height: 47px;
+  color: #2D2D2D;
+  margin: 0 0 50px 0;
+  font-family: 'AvertaCY-Black';
+}
+.bot-odds__content ol.list {
+  counter-reset: bot-name;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.bot-odds__content ol.list li {
+  padding: 0 0 0 34px;
+  margin: 0 0 25px 0;
+  display: block;
+  position: relative;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Bold';
+}
+.bot-odds__content ol.list li:before {
+  counter-increment: bot-name;
+  content: counter(bot-name) ".";
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Bold';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bot-odds__content ol.list li p {
+  margin: 10px 0 0 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Regular';
+}
+.bot-block h2 {
+  font-size: 36px;
+  line-height: 52px;
+  color: #2D2D2D;
+  margin: 0 0 50px 0;
+  font-family: 'AvertaCY-Black';
+}
+.bot-block__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+.bot-block__item:last-child {
+  margin: 0;
+}
+.bot-block__item_caption {
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Regular';
+}
+.bot-block__item_content {
+  min-width: 500px;
+  max-width: 500px;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+.bot-block__item_content li {
+  display: block;
+  padding: 0 0 0 20px;
+  position: relative;
+  margin: 0 0 25px 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Bold';
+}
+.bot-block__item_content li:last-child{
+  margin: 0;
+}
+.bot-block__item_content li:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #2D2D2D;
+  border-radius: 50%;
+}
+.prices-development .prices-block:after {
+  display: none;
+}
+.prices-block p.caption {
+  font-size: 28px;
+  line-height: 40px;
+  border-bottom: 1px solid #707070;
+  padding: 0 0 20px;
+  margin: 0 0 20px 0;
+}
+.prices-development p.price {
+  margin: 0 0 20px 0;
+}
+.prices-block p.desc {
+  margin: 0 0 25px 0;
+  color: #2D2D2D;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: 'AvertaCY-Bold';
+}
+.prices-development .prices-block ul li {
+  color: #2D2D2D;
+}
+.bot-dev__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.bot-dev__content {
+  width: 100%;
+  max-width: 400px;
+}
+.bot-dev__content h2 {
+  font-size: 36px;
+  line-height: 52px;
+  color: #2D2D2D;
+  margin: 0 0 25px 0;
+  font-family: 'AvertaCY-Black';
+}
+.bot-dev__content p {
+  font-family: 'AvertaCY-Regular';
+  font-size: 17px;
+  line-height: 28px;
+  color: #2D2D2D;
+  margin: 0 0 30px 0;
+}
+.bot-dev__content p a {
+  text-decoration: underline;
+  color: #FFA70D;
+}
+.bot-dev__content p a:hover {
+  text-decoration: none;
+  color: #FFA70D;
+}
+.bot-dev__info {
+  min-width: 500px;
+  max-width: 500px;
+  margin: 0 0 0 30px;
+  position: relative;
+}
+.bot-dev__info:after {
+  content: '';
+  bottom: 5px;
+  left: 0;
+  width: 3px;
+  height: 150px;
+  z-index: 5;
+  position: absolute;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+.button-download {
+  border:1px solid #2D2D2D;
+  border-radius: 4px;
+  padding: 14px 32px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2D2D2D;
+  transition: all 400ms ease-in-out;
+  background: transparent;
+  font-family: 'AvertaCY-Semibold';
+}
+.button-download:hover {
+  background: #2D2D2D;
+  color: #fff;
+}
+.bot-dev__info_item {
+  padding: 0 0 0 31px;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.bot-dev__info_item p {
+  margin: 15px 0 0 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Regular';
+}
+.bot-dev__info:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 5px;
+  left: 0;
+  background: #FFA70D;
+  width: 3px;
+  z-index: 1;
+}
+.bot-dev__info_item:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -16px;
+  width: 35px;
+  height: 35px;
+  background: #FFA70D;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  z-index: 3;
+}
+.bot-dev__info_item p.title {
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  margin: 0;
+  font-family: 'AvertaCY-Black';
+}
+.web-dev__odds-bot {
+  padding: 0;
+  background: #fff;
+}
+.black-form {
+  padding: 130px 0;
+  background: #FAF7F4;
+}
+.black-form__flex {
+  display: flex;
+  align-items: flex-start;
+}
+.black-form__content {
+  padding: 45px 0;
+  width: 100%;
+}
+.black-form__content h2 {
+  font-size: 36px;
+  line-height: 52px;
+  color: #2D2D2D;
+  margin: 0 0 25px 0;
+  font-family: 'AvertaCY-Black';
+}
+.black-form__content p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #2D2D2D;
+  margin: 0;
+  font-family: 'AvertaCY-Regular';
+}
+.black-form__form {
+  min-width: 490px;
+  max-width: 490px;
+  margin: 0 0 0 30px;
+  background: #2D2D2D;
+  padding: 70px 50px;
+}
+.black-form__form .form-control {
+  line-height: 20px;
+  color: #fff;
+  border-bottom: 1px solid #707070;
+  background: transparent;
+}
+.black-form__form .form-group ::-webkit-input-placeholder {
+  color: #DFDFDF;
+}
+.black-form__form .form-group ::-moz-placeholder {
+  color: #DFDFDF;
+}
+.black-form__form .form-group :-moz-placeholder {
+  color: #DFDFDF;
+}
+.black-form__form .form-group :-ms-input-placeholder {
+  color: #DFDFDF;
+}
+.black-form__form .form-button {
+ color: #fff;
+ transition: all 400ms ease-in-out;
+}
+.black-form__form .form-button:hover {
+  color: #FFA70D;
+  transition: all 400ms ease-in-out;
+}
+.black-form__callback {
+  margin: 70px 0 0;
+}
+.black-form__callback p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #DFDFDF;
+  margin: 0 0 15px 0;
+  font-family: 'AvertaCY-Regular';
+}
+.black-form__callback ul.list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.black-form__callback ul.list li {
+  margin: 0 20px 0 0;
+}
+.black-form__callback ul.list li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.black-form__callback ul.list li a img {
+  max-width: 22px;
+  margin: 0 10px 0 0;
+}
+.black-form__callback ul.list li  a span {
+  color: #8E8E8E;
+  font-family: 'AvertaCY-Regular';
+  font-size: 12px;
+  line-height: 16px;
+  transition: all 400ms ease-in-out;
+}
+.black-form__callback ul.list li a:hover span {
+  color: #fff;
+  transition: all 400ms ease-in-out;
+}
+.bot-portfolio h2 {
+  font-size: 36px;
+  line-height: 52px;
+  color: #2D2D2D;
+  margin: 0 0 30px 0;
+  font-family: 'AvertaCY-Black';
+}
+.bot-portfolio__item {
+  margin: 50px 0 0 0;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.bot-portfolio__item img {
+  width: 100%;
+}
+.bot-portfolio__item span.text {
+  display: block;
+  margin: 30px 0 0;
+  font-size: 28px;
+  line-height: 37px;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Black';
+  transition: all 400ms ease-in-out;
+}
+.bot-portfolio__item:hover span.text {
+  color: #FFA70D;
+  transition: all 400ms ease-in-out;
+}
+.header {
+  z-index: 55;
+}
+.design-odds {
+  padding: 130px 0;
+  background: #FAF7F4;
+}
+.design-odds h2 {
+  font-size: 36px;
+  line-height: 52px;
+  color: #2D2D2D;
+  margin: 0 0 50px 0;
+  font-family: 'AvertaCY-Black';
+  max-width: 670px;
+}
+.design-odds__flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 -25px;
+  flex-wrap: wrap;
+}
+.design-odds__item {
+  width: calc(33.3% - 50px);
+  margin: 0 25px;
+}
+.design-odds__item p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D2D2D;
+  margin: 15px 0 0 0;
+  font-family: 'AvertaCY-Regular';
+}
+.design-odds__item p.title {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  color: #2D2D2D;
+  font-family: 'AvertaCY-Bold';
+}
+
+@media screen and (max-width: 991px) {
+  .bot-odds__image {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 20px 0 0;
+  }
+  .bot-block__item_content {
+    min-width: 330px;
+    max-width: 330px;
+    margin: 0 0 0 30px;
+  }
+  .bot-dev__info {
+    min-width: 330px;
+    max-width: 330px;
+  }
+  .black-form__flex {
+    display: block;
+  }
+  .black-form__content {
+    padding: 0 0 40px 0;
+    width: 100%;
+  }
+  .black-form__form {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bot-odds__flex {
+    display: block;
+  }
+  .bot-odds__image {
+    display: none;
+  }
+  .bot-odds {
+    padding: 80px 0;
+  }
+  .bot-odds__content p.caption, .bot-block h2 , .bot-dev__content h2, .black-form__content h2, .bot-portfolio h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 30px 0;
+  }
+  .design-odds h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 30px 0;
+    max-width: 100%;
+  }
+  .design-odds__flex {
+    display: block;
+  }
+  .design-odds__item {
+    width: calc(100% - 50px);
+    margin: 25px 25px 0;
+  }
+  .design-odds {
+    padding: 80px 0;
+  }
+  .bot-block__item {
+    display: block;
+  }
+  .bot-block__item_content {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .bot-block__item_content li {
+    font-size: 18px;
+  }
+  .bot-dev__flex {
+    display: block;
+  }
+  .bot-dev__content {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bot-dev__info {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 30px 0 0 0;
+  }
+  .black-form {
+    padding: 80px 0;
+  }
+  .bot-portfolio__item span.text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .black-form__form {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+  }
+}
+/* end 23 11 */
