@@ -151,4 +151,35 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
     /* end 16 11 */
 
+
+    /* 05 12 */
+    $( ".bg_block_inner" ).mouseenter(function(e) {
+        var parentOffset = $(this).offset(); 
+       
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".bg_block_circle").css({"left": relX, "top": relY });
+        // $(this).prev(".bg_block_circle").css({"width": relX + 500, "height": relY + 500 });
+        $(this).prev(".bg_block_circle").removeClass("desplode-circle");
+        $(this).prev(".bg_block_circle").addClass("explode-circle");
+        // if (relX < 50) {
+        //     $(this).prev(".bg_block_circle").css({"left": 0});
+        // } else {
+        //     $(this).prev(".bg_block_circle").css({"left": '50%'});
+        // }
+     
+    });
+     
+    $( ".bg_block_inner" ).mouseleave(function(e) {
+     
+          var parentOffset = $(this).offset(); 
+     
+          var relX = e.pageX - parentOffset.left;
+          var relY = e.pageY - parentOffset.top;
+          $(this).prev(".bg_block_circle").css({"left": relX, "top": relY });
+          $(this).prev(".bg_block_circle").removeClass("explode-circle");
+          $(this).prev(".bg_block_circle").addClass("desplode-circle");
+     
+    });
+    /* end 05 12 */
 });
