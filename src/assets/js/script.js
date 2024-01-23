@@ -182,4 +182,26 @@ document.addEventListener('DOMContentLoaded', () => {
      
     });
     /* end 05 12 */
+    
+    /* 18 01 */
+    const scrollUpBtn = document.querySelector('.scroll-up');
+	const windowInnerHeight = document.documentElement.clientHeight;
+
+	if (scrollUpBtn) {
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > windowInnerHeight) {
+                scrollUpBtn.classList.add('show');
+            } else {
+                scrollUpBtn.classList.remove('show');
+            }
+        });
+		scrollUpBtn.addEventListener('click', () => {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		});
+		
+	}
+    /* end 18 01 */
 });
