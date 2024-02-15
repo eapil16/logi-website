@@ -5263,3 +5263,227 @@ body {
   }
 }
 /* end 18 01 */
+
+
+/* 14 02 */
+.options-block__caption {
+  max-width: 760px;
+  margin: 0 0 50px 0;
+}
+.options-block__caption h2 {
+  font-size: 36px;
+  line-height: 48px;
+  color: #2D2D2D;
+  margin: 0 0 28px 0;
+  font-family: 'AvertaCY-Black';
+}
+.options-block__caption p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #2D2D2D;
+  margin: 0;
+}
+.options-block__content {
+  display: flex;
+  margin: 0 -25px;
+}
+.options-block__item {
+  width: calc(50% - 50px);
+  margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.options-block__item_caption {
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #DFDFDF;
+}
+.options-block__item_caption p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #2D2D2D;
+  margin: 0;
+}
+.options-block__item_caption p.title {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: 'AvertaCY-Black';
+  margin: 0 0 5px 0;
+}
+.options-block__item_content {
+  margin: 0 0 30px 0;
+}
+.options-block__item_content p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #707070;
+  margin: 0 0 20px 0;
+}
+.options-block__item_content ul.list {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.options-block__item_content ul.list li {
+  display: block;
+  margin: 0 0 15px 0;
+  position: relative;
+  padding: 0 0 0 18px;
+  line-height: 20px;
+}
+.options-block__item_content ul.list li:last-child {
+  margin: 0;
+}
+.options-block__item_content ul.list li:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #2D2D2D;
+  border-radius: 50%;
+}
+.options-block__item_price {
+  padding: 25px 30px;
+  background: #FAF7F4;
+}
+.options-block__item_price  p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #707070;
+  margin: 0 0 5px 0;
+}
+.options-block__item_price  p.price {
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  margin: 0;
+  font-family: 'AvertaCY-Black';
+}
+.work-clients h2 {
+  font-size: 36px;
+  line-height: 53px;
+  color: #2D2D2D;
+  margin: 0;
+  font-family: 'AvertaCY-Bold';
+}
+.work-clients__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+}
+.work-clients__item {
+  margin: 50px 25px 0;
+  width: calc(50% - 50px);
+}
+.work-clients__item p {
+  font-size: 14px;
+  color: #2D2D2D;
+  line-height: 19px;
+  margin: 0;
+}
+.work-clients__item p.title {
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+  margin: 0 0 15px 0;
+  font-family: 'AvertaCY-Bold';
+}
+.we-are-partner h2 {
+  font-size: 36px;
+  line-height: 53px;
+  color: #2D2D2D;
+  margin: 0;
+  font-family: 'AvertaCY-Extrabold';
+}
+.other-services  h2 {
+  font-size: 36px;
+  line-height: 53px;
+  color: #2D2D2D;
+  margin: 0;
+  font-family: 'AvertaCY-Extrabold';
+}
+.other-services ul.list {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.other-services ul.list li {
+  display: block;
+  padding: 0;
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2D2D2D;
+}
+.other-services ul.list li:last-child {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 991px) {
+  .options-block__item_caption {
+    min-height: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .options-block__caption h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 25px 0;
+  }
+  .options-block__caption p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .options-block__content {
+    display: block;
+    margin: 0;
+  }
+  .options-block__item {
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+  .options-block__item:last-child {
+    margin: 0;
+  }
+  .options-block__item_caption {
+    min-height: auto;
+  }
+  .work-clients__item {
+    width: calc(100% - 50px);
+    margin: 30px 25px 0;
+  } 
+  .work-clients h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .we-are-partner h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .other-services h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 25px 0;
+  }
+  .breadcrumb {
+    flex-wrap: nowrap;
+  }
+  li.breadcrumb-item {
+    white-space: nowrap;
+  }
+  .breadcrumb-item.active {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+/* end 14 02 */
+
+
